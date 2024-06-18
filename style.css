@@ -185,8 +185,10 @@ header .btn__menu {
   border: 2px solid var(--white);
   padding: 2rem;
   color: var(--white);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 640px) {
@@ -223,13 +225,13 @@ header .btn__menu {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: start;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   gap: 2rem;
 }
 
 .about--text {
   background-color: var(--white);
-  padding: 2rem 2rem 0rem;
+  padding: 2rem 0rem;
   align-self: self-end;
   margin-left: 0;
   position: relative;
@@ -237,6 +239,7 @@ header .btn__menu {
 }
 
 .about--text h2 {
+  text-wrap: balance;
   font-size: 2rem;
   font-weight: 300;
   color: var(--black);
@@ -246,6 +249,8 @@ header .btn__menu {
   margin-top: 1rem;
   line-height: 1.5;
   letter-spacing: 0.02rem;
+  text-align: center;
+  margin-inline: 1.5rem;
 }
 
 @media screen and (min-width: 868px) {
@@ -272,24 +277,25 @@ header .btn__menu {
 
   .about--text p {
     max-width: 28.75rem;
+    text-align: left;
+    margin-inline: 0rem;
   }
 }
 
 /* Creations section */
 .creations {
   margin-top: 4rem;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 .creations--header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
-  padding: 0 2rem;
 }
 
 .creations--header h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 300;
   color: var(--black);
 }
@@ -317,9 +323,7 @@ header .btn__menu {
 .creations--list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
   gap: 2rem;
-  padding: 0 2rem;
 }
 
 .creations--item {
@@ -353,6 +357,10 @@ header .btn__menu {
   .creations {
     margin-top: 8rem;
     padding-inline: 4rem;
+  }
+
+  .creations--header {
+    justify-content: space-between;
   }
 
   .creations--header button {
