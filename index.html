@@ -1,150 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Loopstudios landing page</title>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="container">
+        <header>
+          <a href="#">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <nav class="mobile__menu">
+            <button class="btn__menu btn__menu--hamburger">
+              <img src="images/icon-hamburger.svg" alt="menu icon" />
+            </button>
+            <div class="mobile__menu--slider">
+              <div class="header">
+                <div class="logo">
+                  <img src="images/logo.svg" alt="logo" />
+                </div>
+                <button class="btn__menu btn__menu--close">
+                  <img src="images/icon-close.svg" alt="close icon" />
+                </button>
+              </div>
+              <ul class="nav__links nav__links--mobile">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </nav>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Loopstudios landing page</title>
-</head>
-<body>
-  <div class="intro">
-    
-  <header>
-    <a href="#">
-      <img src="images/logo.svg" alt="logo">
-    </a>
-    <nav>
-      <ul class="nav__links nav__links--mobile">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-
-      <button class="btn__menu btn__menu--hamburger">
-        <img src="images/icon-hamburger.svg" alt="menu icon">
-      </button>
-
-      <button class="btn__menu btn__menu--close">
-        <img src="images/icon-close.svg" alt="close icon">
-      </button>
-
-      <ul class="nav__links nav__links--desktop">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="intro--text">
-    <h1>Immersive experiences that deliver</h1>
-  </div>
-  <main>
-    <section class="about">
-    <div class="about--image">
-      <img src="images/desktop/image-interactive.jpg" alt="AR image" class="desktop">
-      <img src="images/mobile/image-interactive.jpg" alt="AR image" class="mobile">
-    </div>
-    <div class="about--text">
-      <h2>The leader in interactive VR</h2>
-      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
-        projects for some of the best companies around the globe. Our award-winning 
-        creations have transformed businesses through digital experiences that bind 
-        to their brand.</p>
-    </div>
-    </section>
-
-    <section class="creations">
-      <div class="creations--header">
-        <h2>Our Creations</h2>
-        <button class="btn__view">See all</button>
-      </div>
-      <div class="creations--list">
-        <div class="creations--item">
-          <img src="images/desktop/image-deep-earth.jpg" alt="Deep Earth image" class="desktop">
-          <img src="images/mobile/image-deep-earth.jpg" alt="Deep Earth image" class="mobile">
-          <h3>Deep earth</h3>
+          <nav class="desktop__menu">
+            <ul class="nav__links nav__links--desktop">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="intro--text">
+          <h1>Immersive experiences that deliver</h1>
         </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-night-arcade.jpg" alt="Night Arcade image" class="desktop">
-          <img src="images/mobile/image-night-arcade.jpg" alt="Night Arcade image" class="mobile">
-          <h3>Night arcade</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-soccer-team.jpg" alt="Soccer Team image" class="desktop">
-          <img src="images/mobile/image-soccer-team.jpg" alt="Soccer Team image" class="mobile">
-          <h3>Soccer team VR</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-grid.jpg" alt="The grid image" class="desktop">
-          <img src="images/mobile/image-grid.jpg" alt="The grid image" class="mobile">
-          <h3>The grid</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-from-above.jpg" alt="From up above image" class="desktop">
-          <img src="images/mobile/image-from-above.jpg" alt="From up above image" class="mobile">
-          <h3>From up above VR</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-pocket-borealis.jpg" alt="Pocket orealis image" class="desktop">
-          <img src="images/mobile/image-pocket-borealis.jpg" alt="Pocket orealis image" class="mobile">
-          <h3>Pocket borealis</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-curiosity.jpg" alt="The curiosity image" class="desktop">
-          <img src="images/mobile/image-curiosity.jpg" alt="The curiosity image" class="mobile">
-          <h3>The curiosity</h3>
-        </div>
-        <div class="creations--item">
-          <img src="images/desktop/image-fisheye.jpg" alt="Make it fisheye image" class="desktop">
-          <img src="images/mobile/image-fisheye.jpg" alt="Make it fisheye image" class="mobile">
-          <h3>Make it fisheye</h3>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer>
-    <nav>
-      <a href="#top">
-      <img src="images/logo.svg" alt="logo">
-      </a>
-      <ul class="nav__links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-
-    </nav>
-    <div>
-      <div class="socials">
-        <span>
-          <img src="images/icon-facebook.svg" alt="facebook icon">
-        </span>
-        <span>
-          <img src="images/icon-twitter.svg" alt="twitter icon">
-        </span>
-        <span>
-          <img src="images/icon-pinterest.svg" alt="pinterest icon">  
-        </span>
-        <span>
-          <img src="images/icon-instagram.svg" alt="instagram icon">
-        </span>
-
-      </div>
-      <div class="copyright">
-       <p> © <span class="date"></span> Loopstudios. All rights reserved.</p>
       </div>
     </div>
-  </footer>
-</body>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about--image">
+            <img
+              src="images/desktop/image-interactive.jpg"
+              alt="AR image"
+              class="desktop"
+            />
+            <img
+              src="images/mobile/image-interactive.jpg"
+              alt="AR image"
+              class="mobile"
+            />
+          </div>
+          <div class="about--text">
+            <h2>The leader in interactive VR</h2>
+            <p>
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="creations">
+        <div class="container">
+          <div class="creations--header">
+            <h2>Our Creations</h2>
+            <button class="btn__view">See all</button>
+          </div>
+          <div class="creations--list">
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-deep-earth.jpg"
+                alt="Deep Earth image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-deep-earth.jpg"
+                alt="Deep Earth image"
+                class="mobile"
+              />
+              <h3>
+                Deep <br />
+                earth
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-night-arcade.jpg"
+                alt="Night Arcade image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-night-arcade.jpg"
+                alt="Night Arcade image"
+                class="mobile"
+              />
+              <h3>
+                Night <br />
+                arcade
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-soccer-team.jpg"
+                alt="Soccer Team image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-soccer-team.jpg"
+                alt="Soccer Team image"
+                class="mobile"
+              />
+              <h3>
+                Soccer <br />
+                team VR
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-grid.jpg"
+                alt="The grid image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-grid.jpg"
+                alt="The grid image"
+                class="mobile"
+              />
+              <h3>
+                The <br />
+                grid
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-from-above.jpg"
+                alt="From up above image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-from-above.jpg"
+                alt="From up above image"
+                class="mobile"
+              />
+              <h3>
+                From up <br />
+                above VR
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-pocket-borealis.jpg"
+                alt="Pocket orealis image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-pocket-borealis.jpg"
+                alt="Pocket orealis image"
+                class="mobile"
+              />
+              <h3>
+                Pocket <br />
+                borealis
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-curiosity.jpg"
+                alt="The curiosity image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-curiosity.jpg"
+                alt="The curiosity image"
+                class="mobile"
+              />
+              <h3>
+                The <br />
+                curiosity
+              </h3>
+            </div>
+            <div class="creations--item">
+              <img
+                src="images/desktop/image-fisheye.jpg"
+                alt="Make it fisheye image"
+                class="desktop"
+              />
+              <img
+                src="images/mobile/image-fisheye.jpg"
+                alt="Make it fisheye image"
+                class="mobile"
+              />
+              <h3>
+                Make it <br />
+                fisheye
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <nav>
+          <a href="#top">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <ul class="nav__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="socials">
+            <span>
+              <img src="images/icon-facebook.svg" alt="facebook icon" />
+            </span>
+            <span>
+              <img src="images/icon-twitter.svg" alt="twitter icon" />
+            </span>
+            <span>
+              <img src="images/icon-pinterest.svg" alt="pinterest icon" />
+            </span>
+            <span>
+              <img src="images/icon-instagram.svg" alt="instagram icon" />
+            </span>
+          </div>
+          <div class="copyright">
+            <p>
+              © <span class="date"></span> Loopstudios. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
